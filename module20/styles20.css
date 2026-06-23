@@ -57,10 +57,17 @@ nav a{
     color:white;
     text-decoration: none;
 }
+nav li{
+    transition: 0.3s;
+    /* display:inline-block */
+}
+nav li:hover{
+    transform: translateY(-10px);
+}
 
 .hero{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     background: #eef2ff;
     padding: 20px;
@@ -84,8 +91,9 @@ nav a{
     margin-top: 20px;
 }
 .right img{
-    width: 250px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .about,
@@ -94,6 +102,13 @@ nav a{
 .contact{
     padding:50px;
     text-align:center;
+}
+
+.line{
+    width:20px;
+    height:3px;
+    background:#2563eb;
+
 }
 .cards{
     display:flex;
